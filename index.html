@@ -31,7 +31,7 @@ var map = new mapboxgl.Map({
 
 map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
-    layers: ['beer'] 
+    layers: ['locations'] 
   });
 
   if (!features.length) {
